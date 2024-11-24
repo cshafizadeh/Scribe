@@ -108,15 +108,15 @@ export function AppSidebar({
   return (
     <>
       <Sidebar {...props}>
-        <SidebarHeader>
+      <SidebarHeader>
           <h2 className="text-lg font-semibold items-center justify-between">
             My Notebooks
           </h2>
           <Button
             onClick={handleNewNotebook}
-            className="bg-blue-500 text-white px-3 my-3 rounded hover:bg-blue-600 flex items-center gap-2"
+            className="bg-[#D73F09] text-white px-3 my-3 rounded-lg hover:bg-[#B53008] flex items-center gap-2 transition-all duration-200"
           >
-            <FilePlus className="w-5 h-5" />
+            <FilePlus className="w-5 h-5 text-white" />
             New Notebook
           </Button>
         </SidebarHeader>
