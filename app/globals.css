@@ -86,3 +86,26 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+#wave {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+
+#wave div {
+  width: 4px;
+  height: 100%;
+  background: #4a90e2;
+  animation: wave-animation 1.2s ease-in-out infinite;
+}
+
+@keyframes wave-animation {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
