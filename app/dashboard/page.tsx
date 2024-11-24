@@ -1,32 +1,17 @@
-<<<<<<< Updated upstream
-import { AppSidebar } from "@/components/app-sidebar"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Separator } from "@/components/ui/separator"
-=======
 'use client';
 
 import { useState, useEffect } from 'react';
 import { AppSidebar } from '@/components/app-sidebar';
 import { Separator } from '@/components/ui/separator';
->>>>>>> Stashed changes
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar"
+} from '@/components/ui/sidebar';
 
 import { PlayIcon, PauseIcon } from '@heroicons/react/24/solid';
 
 export default function Page() {
-<<<<<<< Updated upstream
-=======
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState('');
   const [recognition, setRecognition] = useState<SpeechRecognition | null>(null);
@@ -99,7 +84,6 @@ export default function Page() {
     window.addEventListener('mouseup', onMouseUp);
   };
 
->>>>>>> Stashed changes
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -124,9 +108,6 @@ export default function Page() {
               )}
             </button>
           </div>
-<<<<<<< Updated upstream
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
-=======
 
           {/* Transcript */}
           <div className="flex-1 p-4 bg-gray-100 rounded">
@@ -156,9 +137,8 @@ export default function Page() {
               placeholder="Write your notes here..."
             />
           </div>
->>>>>>> Stashed changes
         </div>
       </SidebarInset>
     </SidebarProvider>
-  )
+  );
 }
